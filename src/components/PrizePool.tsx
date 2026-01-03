@@ -1,11 +1,11 @@
-import { Trophy, Medal, Award, Gift } from 'lucide-react';
+import { Trophy, Medal, Award } from 'lucide-react';
 
 export function PrizePool() {
   const prizes = [
     {
       position: '1st Place',
       icon: Trophy,
-      amount: '₹15,000',
+      amount: '₹7,000',
       color: 'from-yellow-400 to-yellow-600',
       borderColor: 'border-yellow-500/50',
       shadowColor: 'shadow-yellow-500/20',
@@ -14,7 +14,7 @@ export function PrizePool() {
     {
       position: '2nd Place',
       icon: Medal,
-      amount: '₹7,000',
+      amount: '₹5,000',
       color: 'from-gray-300 to-gray-500',
       borderColor: 'border-gray-400/50',
       shadowColor: 'shadow-gray-400/20',
@@ -29,13 +29,6 @@ export function PrizePool() {
       shadowColor: 'shadow-orange-500/20',
       perks: ['Cash Prize', 'Swag', 'Certificate', 'Goodies']
     }
-  ];
-
-  const specialPrizes = [
-    { title: 'Best First-Time Team', amount: 'Exclusive Swag', icon: Gift },
-    { title: 'Best Student Team', amount: 'Premium Goodies', icon: Gift },
-    { title: 'Most Creative Solution', amount: 'Special Merchandise', icon: Gift },
-    { title: 'Fastest Solver (Per Category)', amount: 'Goodies & Swag', icon: Gift }
   ];
 
   return (
@@ -76,26 +69,6 @@ export function PrizePool() {
               </ul>
             </div>
           ))}
-        </div>
-
-        {/* Special Category Prizes */}
-        <div className="p-8 bg-linear-to-r from-[#1a0000]/50 to-[#4B0000]/30 border-2 border-[#4B0000]/50 rounded-2xl relative">
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#8B0000] text-white px-6 py-2 rounded-full text-sm font-bold">
-            SPECIAL REWARDS
-          </div>
-          
-          <h3 className="text-2xl text-white mb-6 text-center mt-4">Special Category Prizes</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {specialPrizes.map((prize, index) => (
-              <div key={index} className="p-4 bg-black/30 border-2 border-[#4B0000]/50 rounded-lg hover:border-[#8B0000]/80 transition-all">
-                <div className="flex items-center gap-2 mb-3">
-                  <prize.icon className="w-8 h-8 text-[#DC143C]" />
-                </div>
-                <h4 className="text-white mb-2">{prize.title}</h4>
-                <p className="text-[#DC143C]">{prize.amount}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div className="mt-12 text-center">

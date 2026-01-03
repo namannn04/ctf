@@ -86,7 +86,7 @@ export function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl text-[#DC143C] mb-2">
-                500+
+                1500+
               </div>
               <div className="text-gray-400">Participants</div>
             </div>
@@ -98,13 +98,13 @@ export function About() {
             </div>
             <div>
               <div className="text-4xl text-[#DC143C] mb-2">
-                72
+                12
               </div>
               <div className="text-gray-400">Hours</div>
             </div>
             <div>
               <div className="text-4xl text-[#DC143C] mb-2">
-                ₹15L+
+                ₹ 30K+
               </div>
               <div className="text-gray-400">Prize Pool</div>
             </div>

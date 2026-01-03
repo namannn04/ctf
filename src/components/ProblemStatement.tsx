@@ -6,7 +6,6 @@ export function ProblemStatement() {
       icon: Code,
       title: 'Web Exploitation',
       difficulty: 'Easy to Hard',
-      challenges: 12,
       description: 'SQL injection, XSS, CSRF, authentication bypass, and modern web vulnerabilities.',
       badge: 'CLASSIFIED'
     },
@@ -14,7 +13,6 @@ export function ProblemStatement() {
       icon: Lock,
       title: 'Cryptography',
       difficulty: 'Medium to Expert',
-      challenges: 10,
       description: 'Classical ciphers, modern encryption, hash functions, and cryptanalysis.',
       badge: 'TOP SECRET'
     },
@@ -22,7 +20,6 @@ export function ProblemStatement() {
       icon: Cpu,
       title: 'Binary Exploitation',
       difficulty: 'Hard to Expert',
-      challenges: 8,
       description: 'Buffer overflows, ROP chains, shellcode injection, and reverse engineering.',
       badge: 'CONFIDENTIAL'
     },
@@ -30,7 +27,6 @@ export function ProblemStatement() {
       icon: FileSearch,
       title: 'Forensics',
       difficulty: 'Easy to Medium',
-      challenges: 10,
       description: 'Memory dumps, disk analysis, network packets, and steganography.',
       badge: 'EVIDENCE'
     },
@@ -38,7 +34,6 @@ export function ProblemStatement() {
       icon: Database,
       title: 'Reverse Engineering',
       difficulty: 'Medium to Expert',
-      challenges: 8,
       description: 'Binary analysis, decompilation, malware analysis, and code obfuscation.',
       badge: 'RESTRICTED'
     },
@@ -46,7 +41,6 @@ export function ProblemStatement() {
       icon: Network,
       title: 'Network Security',
       difficulty: 'Easy to Hard',
-      challenges: 8,
       description: 'Packet analysis, protocol exploitation, and network reconnaissance.',
       badge: 'SENSITIVE'
     }
@@ -87,7 +81,6 @@ export function ProblemStatement() {
                 <span className="px-3 py-1 bg-[#8B0000]/20 border border-[#8B0000]/50 rounded-full text-[#DC143C]">
                   {category.difficulty}
                 </span>
-                <span className="text-gray-400">{category.challenges} Challenges</span>
               </div>
               
               <p className="text-gray-400">{category.description}</p>
@@ -101,14 +94,10 @@ export function ProblemStatement() {
           </div>
           
           <h3 className="text-2xl text-white mb-4 text-center mt-4">Competition Format</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
             <div className="p-4 bg-black/30 rounded-lg border border-[#4B0000]/30">
               <div className="text-[#DC143C] mb-2">Jeopardy Style</div>
               <p className="text-gray-400">Each challenge has a point value based on difficulty. Solve challenges to earn points and climb the leaderboard.</p>
-            </div>
-            <div className="p-4 bg-black/30 rounded-lg border border-[#4B0000]/30">
-              <div className="text-[#DC143C] mb-2">Dynamic Scoring</div>
-              <p className="text-gray-400">Challenge values decrease as more teams solve them. Early solvers get maximum points.</p>
             </div>
             <div className="p-4 bg-black/30 rounded-lg border border-[#4B0000]/30">
               <div className="text-[#DC143C] mb-2">Team or Solo</div>
