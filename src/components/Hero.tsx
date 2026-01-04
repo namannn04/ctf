@@ -33,7 +33,7 @@ export function Hero() {
         </div>
         
         <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6 bg-linear-to-r from-[#DC143C] via-[#8B0000] to-[#4B0000] bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(139,0,0,0.5)]">
-          CyberHack CTF 2026
+          Digital Cyberhunt CTF 2026
         </h1>
         
         <p className="text-xl sm:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
