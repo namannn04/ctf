@@ -1,40 +1,30 @@
-import { Mail, Globe } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export function Organizers() {
   const organizers = [
     {
-      name: 'TechSec Community',
-      role: 'Lead Organizer',
+      name: 'Geek Room MSIT',
       description: 'A global community of cybersecurity enthusiasts dedicated to promoting ethical hacking and security awareness.',
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop',
       email: 'contact@techsec.org',
-      website: 'https://techsec.org'
     },
     {
-      name: 'CyberEdu Foundation',
-      role: 'Educational Partner',
+      name: 'IILM GDG',
       description: 'Non-profit organization focused on cybersecurity education and skill development for students and professionals.',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
       email: 'info@cyberedu.org',
-      website: 'https://cyberedu.org'
     },
     {
-      name: 'HackersHub',
-      role: 'Community Partner',
+      name: 'Thyndercipher',
       description: 'Platform connecting security researchers, bug bounty hunters, and cybersecurity professionals worldwide.',
       image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop',
       email: 'hello@hackershub.io',
-      website: 'https://hackershub.io'
     }
   ];
 
   const teamMembers = [
-    { name: 'David Kim', role: 'Event Director' },
-    { name: 'Rachel Moore', role: 'Technical Lead' },
-    { name: 'Ahmed Hassan', role: 'Challenge Designer' },
-    { name: 'Lisa Park', role: 'Community Manager' },
-    { name: 'Carlos Silva', role: 'Platform Engineer' },
-    { name: 'Nina Dubois', role: 'Operations Manager' }
+    { name: 'Shaymon Khawas', image: '/src/assets/shaymon.jpeg' },
+    { name: 'Somil Jha', image: '/src/assets/somil.jpg' },
   ];
 
   return (
@@ -63,14 +53,10 @@ export function Organizers() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/80"></div>
-                <div className="absolute top-2 left-2 bg-[#8B0000] text-white px-3 py-1 rounded text-xs font-bold">
-                  {org.role.toUpperCase()}
-                </div>
               </div>
               
               <div className="p-6">
                 <h3 className="text-xl text-white mb-1">{org.name}</h3>
-                <p className="text-[#DC143C] mb-3">{org.role}</p>
                 <p className="text-gray-400 mb-4">{org.description}</p>
                 
                 <div className="flex flex-col gap-2">
@@ -80,13 +66,6 @@ export function Organizers() {
                   >
                     <Mail className="w-4 h-4" />
                     <span>{org.email}</span>
-                  </a>
-                  <a
-                    href={org.website}
-                    className="flex items-center gap-2 text-gray-400 hover:text-[#DC143C] transition-colors duration-300"
-                  >
-                    <Globe className="w-4 h-4" />
-                    <span>{org.website}</span>
                   </a>
                 </div>
               </div>
@@ -101,16 +80,19 @@ export function Organizers() {
           </div>
           
           <h3 className="text-2xl text-white mb-6 text-center mt-4">Core Organizing Team</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {teamMembers.map((member, index) => (
-              <div key={index} className="text-center group">
+              <div key={index} className="text-center group w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(16.666%-20px)]">
                 <div className="relative inline-block mb-3">
-                  <div className="w-20 h-20 bg-linear-to-br from-[#8B0000] to-[#4B0000] rounded-full flex items-center justify-center mx-auto border-4 border-[#4B0000]/50 group-hover:border-[#8B0000] transition-all">
-                    <span className="text-2xl text-white">{member.name.split(' ').map(n => n[0]).join('')}</span>
+                  <div className="w-28 h-28 bg-linear-to-br from-[#8B0000] to-[#4B0000] rounded-full flex items-center justify-center mx-auto border-4 border-[#4B0000]/50 group-hover:border-[#8B0000] transition-all overflow-hidden">
+                    {member.image ? (
+                      <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <span className="text-2xl text-white">{member.name.split(' ').map(n => n[0]).join('')}</span>
+                    )}
                   </div>
                 </div>
                 <h4 className="text-white mb-1">{member.name}</h4>
-                <p className="text-gray-400">{member.role}</p>
               </div>
             ))}
           </div>
