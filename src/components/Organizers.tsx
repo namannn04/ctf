@@ -1,4 +1,6 @@
 import { Mail } from 'lucide-react';
+import shaymonImage from '../assets/shaymon.jpeg';
+import somilImage from '../assets/somil.jpg';
 
 export function Organizers() {
   const organizers = [
@@ -23,8 +25,8 @@ export function Organizers() {
   ];
 
   const teamMembers = [
-    { name: 'Shaymon Khawas', image: '/src/assets/shaymon.jpeg' },
-    { name: 'Somil Jha', image: '/src/assets/somil.jpg' },
+    { name: 'Shaymon Khawas', image: shaymonImage },
+    { name: 'Somil Jha', image: somilImage },
   ];
 
   return (
