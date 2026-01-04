@@ -6,7 +6,7 @@ export function Organizers() {
   const organizers = [
     {
       name: 'Geek Room MSIT',
-      description: 'A global community of cybersecurity enthusiasts dedicated to promoting ethical hacking and security awareness.',
+      description: 'Geek Room is a widespread coding community with over 1.5L+ active coders nationwide. It was started by three coding enthusiasts with the main objective to create a transparent community where sharing of ideas and helping other people is the main goal.',
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop',
       // email: 'contact@techsec.org',
     },
