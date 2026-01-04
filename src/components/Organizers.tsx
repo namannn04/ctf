@@ -12,7 +12,7 @@ export function Organizers() {
     },
     {
       name: 'IILM GDG',
-      description: 'Non-profit organization focused on cybersecurity education and skill development for students and professionals.',
+      description: 'GDG IILM is the official Google Developer Groups chapter at IILM College, aimed at building a collaborative tech ecosystem on campus. It provides students with opportunities to explore modern technologies through events, workshops, and peer learning.',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
       // email: 'info@cyberedu.org',
     },
