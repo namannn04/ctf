@@ -1,4 +1,4 @@
-import { Mail } from 'lucide-react';
+// import { Mail } from 'lucide-react';
 import shaymonImage from '../assets/shaymon.jpeg';
 import somilImage from '../assets/somil.jpg';
 
@@ -8,19 +8,19 @@ export function Organizers() {
       name: 'Geek Room MSIT',
       description: 'A global community of cybersecurity enthusiasts dedicated to promoting ethical hacking and security awareness.',
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop',
-      email: 'contact@techsec.org',
+      // email: 'contact@techsec.org',
     },
     {
       name: 'IILM GDG',
       description: 'Non-profit organization focused on cybersecurity education and skill development for students and professionals.',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
-      email: 'info@cyberedu.org',
+      // email: 'info@cyberedu.org',
     },
     {
       name: 'Thyndercipher',
       description: 'Platform connecting security researchers, bug bounty hunters, and cybersecurity professionals worldwide.',
       image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop',
-      email: 'hello@hackershub.io',
+      // email: 'hello@hackershub.io',
     }
   ];
 
@@ -62,13 +62,13 @@ export function Organizers() {
                 <p className="text-gray-400 mb-4">{org.description}</p>
                 
                 <div className="flex flex-col gap-2">
-                  <a
+                  {/* <a
                     href={`mailto:${org.email}`}
                     className="flex items-center gap-2 text-gray-400 hover:text-[#DC143C] transition-colors duration-300"
                   >
                     <Mail className="w-4 h-4" />
                     <span>{org.email}</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
