@@ -1,19 +1,21 @@
 // import { Mail } from 'lucide-react';
 import shaymonImage from '../assets/shaymon.jpeg';
 import somilImage from '../assets/somil.jpg';
+import grmsit from '../assets/organizers/grmsit.png';
+import gdgiilm from '../assets/organizers/gdgiilm.png';
 
 export function Organizers() {
   const organizers = [
     {
       name: 'Geek Room MSIT',
       description: 'Geek Room is a widespread coding community with over 1.5L+ active coders nationwide. It was started by three coding enthusiasts with the main objective to create a transparent community where sharing of ideas and helping other people is the main goal.',
-      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop',
+      image: grmsit,
       // email: 'contact@techsec.org',
     },
     {
       name: 'IILM GDG',
       description: 'GDG IILM is the official Google Developer Groups chapter at IILM College, aimed at building a collaborative tech ecosystem on campus. It provides students with opportunities to explore modern technologies through events, workshops, and peer learning.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
+      image: gdgiilm,
       // email: 'info@cyberedu.org',
     },
     {
@@ -48,7 +50,7 @@ export function Organizers() {
               key={index}
               className="bg-linear-to-br from-[#1a0000] to-black border-2 border-[#4B0000]/50 rounded-xl overflow-hidden hover:border-[#8B0000]/80 transition-all duration-300 hover:shadow-lg hover:shadow-[#8B0000]/20 relative group"
             >
-              <div className="h-48 overflow-hidden relative">
+              <div className="h-60 overflow-hidden relative">
                 <img
                   src={org.image}
                   alt={org.name}
