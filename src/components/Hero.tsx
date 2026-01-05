@@ -58,12 +58,14 @@ export function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap justify-center gap-4">
-          <button className="px-8 py-4 bg-linear-to-r from-[#8B0000] to-[#4B0000] text-white rounded-lg hover:shadow-lg hover:shadow-[#8B0000]/50 transition-all duration-300 border-2 border-[#DC143C]">
+          <a 
+            href="https://unstop.com/hackathons/digital-cyberhunt-ctf-geek-room-msit-1612526" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 bg-linear-to-r from-[#8B0000] to-[#4B0000] text-white! rounded-lg hover:shadow-lg hover:shadow-[#8B0000]/50 transition-all duration-300 border-2 border-[#DC143C]"
+          >
             Join The Investigation
-          </button>
-          <button className="px-8 py-4 bg-black/50 text-white border-2 border-[#4B0000] rounded-lg hover:bg-[#1a0000]/50 transition-all duration-300">
-            View Case Files
-          </button>
+          </a>
         </div>
       </div>
 
