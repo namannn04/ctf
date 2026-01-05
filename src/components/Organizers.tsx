@@ -3,6 +3,7 @@ import shaymonImage from '../assets/shaymon.jpeg';
 import somilImage from '../assets/somil.jpg';
 import grmsit from '../assets/organizers/grmsit.png';
 import gdgiilm from '../assets/organizers/gdgiilm.png';
+import tc from '../assets/organizers/tc.png';
 
 export function Organizers() {
   const organizers = [
@@ -20,8 +21,8 @@ export function Organizers() {
     },
     {
       name: 'Thyndercipher',
-      description: 'Platform connecting security researchers, bug bounty hunters, and cybersecurity professionals worldwide.',
-      image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop',
+      description: 'ThunderCypher is a cybersecurity-focused organization working in offensive security, training, and community-driven learning. It promotes practical, hands-on cybersecurity skills through technical initiatives and industry engagement, with a strong emphasis on real-world security practices.',
+      image: tc,
       // email: 'hello@hackershub.io',
     }
   ];
