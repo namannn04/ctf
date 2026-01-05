@@ -12,7 +12,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-3">
               <h3 className="text-2xl bg-linear-to-r from-[#DC143C] to-[#8B0000] bg-clip-text text-transparent">
-                CyberHack CTF
+                Digital Cyberhunt CTF
               </h3>
             </div>
             <p className="text-gray-400 mb-4">
@@ -62,8 +62,8 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:info@cyberhackctf.com" className="hover:text-[#DC143C] transition-colors duration-300">
-                  info@cyberhackctf.com
+                <a href="mailto:info@digitalcyberhuntctf.com" className="hover:text-[#DC143C] transition-colors duration-300">
+                  info@digitalcyberhuntctf.com
                 </a>
               </li>
               <li className="text-gray-400">Support: 24/7 Available</li>
@@ -74,7 +74,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t-2 border-[#4B0000]/50 text-center text-gray-400">
-          <p>&copy; 2024 CyberHack CTF. All rights reserved. Built with passion for cybersecurity.</p>
+          <p>&copy; 2026 Digital Cyberhunt CTF. All rights reserved. Built with passion for cybersecurity.</p>
         </div>
       </div>
     </footer>

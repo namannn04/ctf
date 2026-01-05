@@ -48,10 +48,10 @@ export function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl mb-4 bg-linear-to-r from-[#DC143C] to-[#8B0000] bg-clip-text text-transparent">
-            About CyberHack CTF
+            About Digital Cyberhunt CTF
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            CyberHack CTF is a premier cybersecurity competition
+            Digital Cyberhunt CTF is a premier cybersecurity competition
             bringing together the brightest minds in ethical
             hacking. Whether you're a seasoned professional or
             an enthusiastic beginner, our challenges will test
